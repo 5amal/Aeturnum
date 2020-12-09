@@ -1,0 +1,14 @@
+pipeline {
+    agent { label '10.100.100.148'}
+    environment {SHEHAN_PATH="/home/ec2-user/shehan"}
+    
+    stages {
+        stage('Hello') {
+            steps {
+            // Shehan 
+            //sh "source ~./bashrc
+               echo 'Hello World'
+            }
+        }
+    }
+}
